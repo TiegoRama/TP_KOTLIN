@@ -20,16 +20,26 @@ fun main(){
    println(argent.retire(0.9))
 } */
 
-/*fun main(){
-   val empoye = Employe("Billy","herome","OPDQSOP",2024,1200.0)
+fun main(){
+    println("Entre votre nom")
+    var nom = readln()
+    println("Entre votre prenom")
+    var prenom = readln()
+    println("Entre votre matricule")
+    var matricule = readln()
+    println("Entre votre annee")
+    var annee = readln().toInt()
+    println("Entre votre salaire")
+    var salaire: Double = readln().toDouble()
+
+    val empoye = Employe(nom,prenom,matricule,annee,salaire)
 println(empoye.ancien())
 println(empoye.augmentation())
 println(empoye.AfficherEmployer())
 }
-*/
-
-fun main(){
-    
 
 
-}
+//fun main(){
+//    var personne = Taille (mutableListOf<Any>())
+//    personne.ajouter("Nom","Feur")
+//}

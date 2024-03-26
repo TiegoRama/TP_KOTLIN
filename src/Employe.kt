@@ -33,7 +33,7 @@ fun augmentation():Double {
 fun AfficherEmployer(): String {
     var prenom: String = this.Prenom.capitalize() 
     val nom: String = this.Nom.uppercase()
-    val res = nom +" " +  prenom
+    val res = nom +" " +  prenom +" "+ ancien() + this.Matricule  + augmentation()
 
 
     return res
