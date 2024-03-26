@@ -40,6 +40,8 @@ println(empoye.AfficherEmployer())
 
 
 //fun main(){
-//    var personne = Taille (mutableListOf<Any>())
-//    personne.ajouter("Nom","Feur")
+//    var personne = mutableListOf<Any>()
+//
+//
+//
 //}

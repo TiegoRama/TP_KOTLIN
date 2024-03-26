@@ -31,9 +31,11 @@ fun augmentation():Double {
     return res
 }
 fun AfficherEmployer(): String {
-    var prenom: String = this.Prenom.capitalize() 
+    var prenom: String = this.Prenom.capitalize()
     val nom: String = this.Nom.uppercase()
-    val res = nom +" " +  prenom +" "+ ancien() + this.Matricule  + augmentation()
+
+    val res =
+        """Nom Complet : $nom $prenom Anciénneté :${ancien()} Matricule : ${this.Matricule} Salaire avant l'augmentation ${this.Salaire} Salaire après l'augmentation : ${augmentation()}"""
 
 
     return res
