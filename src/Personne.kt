@@ -1,12 +1,12 @@
 class Personne {
     var Nom: String = ""
-    var poids: Double = 0.0
+    var poids: Int = 0
     var taille: Double = 0.0
 
-    constructor(poids: Double, taille: Double,Nom:String) {
-        this.poids = poids
-        this.taille = taille
+    constructor(Nom:String , taille: Double,poids: Int) {
         this.Nom = Nom
+        this.taille = taille
+        this.poids = poids
     }
 
     constructor()
@@ -25,4 +25,6 @@ class Personne {
         } else {
             res = "Obèse"
         }
-return res }}
+return res }
+
+}

@@ -20,28 +20,43 @@ fun main(){
    println(argent.retire(0.9))
 } */
 
-fun main(){
-    println("Entre votre nom")
-    var nom = readln()
-    println("Entre votre prenom")
-    var prenom = readln()
-    println("Entre votre matricule")
-    var matricule = readln()
-    println("Entre votre annee")
-    var annee = readln().toInt()
-    println("Entre votre salaire")
-    var salaire: Double = readln().toDouble()
+//fun main(){
+//    println("Entre votre nom")
+//    var nom = readln()
+//    println("Entre votre prenom")
+//    var prenom = readln()
+//    println("Entre votre matricule")
+//    var matricule = readln()
+//    println("Entre votre annee")
+//    var annee = readln().toInt()
+//    println("Entre votre salaire")
+//    var salaire: Double = readln().toDouble()
+//
+//    val empoye = Employe(nom,prenom,matricule,annee,salaire)
+//println(empoye.ancien())
+//println(empoye.augmentation())
+//println(empoye.AfficherEmployer())
+//}
 
-    val empoye = Employe(nom,prenom,matricule,annee,salaire)
-println(empoye.ancien())
-println(empoye.augmentation())
-println(empoye.AfficherEmployer())
+
+fun main(){
+    var lesPersonnes = mutableListOf<Personne>()
+    lesPersonnes.add(Personne("toto",1.6,60))
+    lesPersonnes.add(Personne("titi",1.8,76))
+    println(lesPersonnes)
+    var cumulTaille = 0.0
+    for ( unePersonne in lesPersonnes){
+        println("${unePersonne.Nom} a un imc de ${unePersonne.IMC()}")
+        cumulTaille += unePersonne.taille
+        println(lesPersonnes.indexOf(unePersonne))
+    }
+    println("La taille moyenne est de ${cumulTaille/lesPersonnes.size}")
+for (grandpersonne in lesPersonnes){
+    if(grandpersonne.taille > lesPersonnes[+1].taille){
+        println("Le plus grand ${grandpersonne.Nom} ${grandpersonne.taille}")
+
+    }
 }
 
 
-//fun main(){
-//    var personne = mutableListOf<Any>()
-//
-//
-//
-//}
+}
